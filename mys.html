@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #060c45;
+        margin: 0;
+        font-family: Arial ,sans-serif;
+      }
+      .maincontainer{
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        gap: 40px;
+        align-items: flex-start;
+      }
+
+      .imgclass{
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .content-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 500px;
+      }
+      .heading{
+        color:#2893e6;
+        display: flex;
+        justify-content: center;
+        font-family: Arial,sans-serif;
+        font: italic;
+        font-size: 40px;
+        padding-bottom: 1px;
+      }
+      .about-box,
+      .rule-box {
+        background-color: #1f123d;
+        border: 2px solid #03144c;
+        border-radius: 10px;
+        padding: 20px;
+        color: #ddd;
+      }
+
+      .about-box h2,
+      .rule-box h2 {
+        color: #2893e6;
+        text-align: center;
+        margin-top: 0;
+      }
+      .imgcontainer{
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+      }
+      .regstyle{
+        color: aliceblue;
+        background-color: #2893e6;
+        height: 45px;
+        border-radius: 14px;
+        border: #ddd;
+      }
+
+      .regstyle:hover{
+        background-color: #09548e;
+        cursor: pointer;
+      }
+      .rule-box ul {
+        padding-left: 20px;
+      }
+      .rule-box li {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="heading">Mystique Quest</h2>
+    <div class="maincontainer">
+      <div class="imgcontainer">
+        <img class="imgclass" src="Pics/Mystic Quest.webp" alt="Duo Dance Event Image" />
+        <button class="regstyle" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfuDiONXDhXs50LnC7yUSPRhEL_mNXPJVAC_luFDf2KxFu_wA/viewform?usp=dialog', '_blank')">
+          Register Now
+        </button>
+        
+      </div>
+      <div class="content-container">
+        <div class="about-box">
+          <h2> About the Event :</h2>
+          <p>Are you ready to embark on a thrilling adventure across the campus? Solve riddles, complete challenges, and race against time to uncover hidden clues leading to the ultimate treasure! Gather your team, put on your thinking caps, and let the hunt begin! </p>
+        </div>
+        <div class="rule-box">
+          <h2>Rules :</h2>
+          <ul>
+            <li>Team Size: Maximum 7 teams (first come, first serve basis), each team consisting of 4 members</li>
+            <li>Clue-Based Challenge: Each clue will lead to a new location, but you must complete a task at every clue point before moving to the next.</li>
+            <li>Time Limit: Teams must finish the hunt within the allotted time to be eligible for winning.</li>
+            <li>No External Help: Use of mobile phones or outside assistance is strictly prohibited.</li>
+            <li>Fair Play: Teams found interfering with others’ clues or sabotaging will be disqualified</li>
+            <li>Winning Criteria: The team that successfully finds the final treasure in the shortest time wins.</li>
+            <li>Duo can consist of any gender combination:
+             
+          </ul>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </body>
+</html>

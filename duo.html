@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #060c45;
+        margin: 0;
+        font-family: Arial ,sans-serif;
+      }
+      .maincontainer{
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        gap: 40px;
+        align-items: flex-start;
+      }
+
+      .imgclass{
+        width: 300px;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .content-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 500px;
+      }
+      .heading{
+        color:#2893e6;
+        display: flex;
+        justify-content: center;
+        font-family: Arial,sans-serif;
+        font: italic;
+        font-size: 40px;
+        padding-bottom: 1px;
+      }
+      .about-box,
+      .rule-box {
+        background-color: #1f123d;
+        border: 2px solid #03144c;
+        border-radius: 10px;
+        padding: 20px;
+        color: #ddd;
+      }
+
+      .about-box h2,
+      .rule-box h2 {
+        color: #2893e6;
+        text-align: center;
+        margin-top: 0;
+      }
+      .imgcontainer{
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+      }
+      .regstyle{
+        color: aliceblue;
+        background-color: #2893e6;
+        height: 45px;
+        border-radius: 14px;
+        border: #ddd;
+      }
+
+      .regstyle:hover{
+        background-color: #09548e;
+        cursor: pointer;
+      }
+      .rule-box ul {
+        padding-left: 20px;
+      }
+      .rule-box li {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="heading">Duo Dance</h2>
+    <div class="maincontainer">
+      <div class="imgcontainer">
+        <img class="imgclass" src="Pics/Duo Dance.webp" alt="Duo Dance Event Image" />
+        <button class="regstyle" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSfuDiONXDhXs50LnC7yUSPRhEL_mNXPJVAC_luFDf2KxFu_wA/viewform?usp=dialog', '_blank')">
+          Register Now
+        </button>
+        
+      </div>
+      <div class="content-container">
+        <div class="about-box">
+          <h2> About the Event :</h2>
+          <p>The Duo Dance Competition is an exciting three-level event where pairs compete to showcase their synchronization, creativity, and technique. </p>
+        </div>
+        <div class="rule-box">
+          <h2>Rules :</h2>
+          <ul>
+            <li>Each team must consist of 2 members</li>
+            <li>Maximum performance time: 5 minutes</li>
+            <li>No props will be provided by the organizers</li>
+            <li>1st round - online</li>
+            <li>2nd round - On stage performance with prepared choreography</li>
+            <li>3rd round - Spot choreography round</li>
+            <li>Duo can consist of any gender combination:
+              <ul>
+                <li>A boy and a girl</li>
+                <li>Two girls</li>
+                <li>Two boys</li>
+              </ul>
+            </li>
+            <li>Vulgarity or obscenity will lead to disqualification</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </body>
+</html>

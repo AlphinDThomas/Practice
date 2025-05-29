@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pratitya 25</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .background {
+      background-image:  url('Pics/main.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      height: 100vh;
+      color: white;
+}
+
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      position: absolute;
+      width: 100%;
+      z-index: 10;
+    }
+
+    .navbar .logo img {
+      height: 40px;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .navbar li {
+      margin-left: 2rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #ffd700;
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 5;
+      position: relative;
+    }
+
+    .title {
+      font-size: 6rem;
+      font-weight: 600;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+      position: relative;
+    }
+
+    .title sup {
+      font-size: 1.5rem;
+      vertical-align: super;
+    }
+
+    .lantern-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .lantern {
+      position: absolute;
+      width: 60px;
+      animation: float 6s ease-in-out infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="background">
+    <header class="navbar">
+      <div class="logo">
+        <img src="Pics/saintgits_logo.webp" alt="Saintgits Logo"/>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="registration.html">Events</a></li>
+          <li><a href="#">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <h1 class="title">Pratitya<sup>25</sup></h1>
+    </main>
+
+    <!-- Lanterns -->
+    <div class="lantern-container">
+      <img src="Pics/lantern.png" class="lantern" style="top: 10%; left: 20%;" />
+      <img src="Pics/lantern.png" class="lantern" style="top: 40%; left: 70%;" />
+      <img src="Pics/lantern.png" class="lantern" style="top: 60%; left: 30%;" />
+      <img src="Pics/lantern.png" class="lantern" style="top: 80%; left: 50%;" />
+      <img src="Pics/lantern.png" class="lantern" style="top: 20%; left: 80%;" />
+    </div>
+  </div>
+</body>
+</html>
